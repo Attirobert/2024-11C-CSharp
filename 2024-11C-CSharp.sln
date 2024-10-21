@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33927.289
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teszt", "Teszt\Teszt.csproj", "{85291093-06C6-4585-A47B-5970891D0833}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrePlusz", "PrePlusz\PrePlusz.csproj", "{E4B1105A-2DB6-48DA-AAC9-00081BA37B03}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KőPapírOlló", "KőPapírOlló\KőPapírOlló.csproj", "{D216F417-D0BD-4C65-9780-FE77A16BA033}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Számkitaláló", "Számkitaláló\Számkitaláló.csproj", "{A17E45EE-7B75-4F7D-8ECB-DA7D40D13E72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{D216F417-D0BD-4C65-9780-FE77A16BA033}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D216F417-D0BD-4C65-9780-FE77A16BA033}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D216F417-D0BD-4C65-9780-FE77A16BA033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A17E45EE-7B75-4F7D-8ECB-DA7D40D13E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A17E45EE-7B75-4F7D-8ECB-DA7D40D13E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A17E45EE-7B75-4F7D-8ECB-DA7D40D13E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A17E45EE-7B75-4F7D-8ECB-DA7D40D13E72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +67,7 @@ Global
 		{7A1AADD9-5314-47DF-B627-9960245162EE} = {9E260617-DA0E-4C43-9B35-BA828A926053}
 		{47F87E29-9BC1-493D-9579-8CA630999F67} = {9E260617-DA0E-4C43-9B35-BA828A926053}
 		{D216F417-D0BD-4C65-9780-FE77A16BA033} = {9E260617-DA0E-4C43-9B35-BA828A926053}
+		{A17E45EE-7B75-4F7D-8ECB-DA7D40D13E72} = {9E260617-DA0E-4C43-9B35-BA828A926053}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7B6BC67-986C-4A2E-99D4-2EEFBDC838A3}
