@@ -12,7 +12,7 @@ using System.Threading.Tasks;
  *  Ezután kiírja a művelet eredményét
  *  Ezután megkérdezi, hogy akar-e a kezelő újabb számítást végezni, 
  *      - ha igen, akkor törli a képernyőt és újra kezdi az adatbekérést
- *      - ha nem, akkor törli a képernyőt és kilép a programbóln
+ *      - ha nem, akkor törli a képernyőt és kilép a programból
  *      
  */
 #endregion Eof A program feladata

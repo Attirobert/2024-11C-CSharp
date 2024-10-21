@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 /*
  * A klasszikus játék megvalósítása.
  * A játék addig folytatódik, amíg a játékos "n" jelet ír be.
- * A játékos választását véletlenszám generátorral állítjuk elő.
+ * A gép választását véletlenszám generátorral állítjuk elő.
  * Tartsa nyílván a játék állását, amit minden forduló után kiír.
  */
 namespace KőPapírOlló
