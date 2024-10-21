@@ -29,7 +29,7 @@ namespace KőPapírOlló
                 // A játékos választása
                 Console.WriteLine("Válassz! (k/p/o)");
 
-                switch (Console.ReadKey().KeyChar)
+                switch (Console.ReadKey(true).KeyChar)
                 {
                     case 'k': játékosVálasztása = "kő"; break;
                     case 'p': játékosVálasztása = "papír"; break;
@@ -40,7 +40,7 @@ namespace KőPapírOlló
                 }
 
                 // A gép választása
-                switch (r.Next(0,3)
+                switch (r.Next(0,3))
                 {
                     case 0: compVálasztása = "kő"; break;
                     case 1: compVálasztása = "papír"; break;
@@ -70,7 +70,7 @@ namespace KőPapírOlló
 
                 // A Console.ReadKey() ConsoleKeyInfo objektumot ad vissza, amelyben a KeyChar tulajdonság tartalmazza a leütött karaktert.
                 // A true paraméter hatására nem jelenik meg a képernyőn a leütött karakter
-            } while (Console.ReadKey(true).KeyChar == 'n');
+            } while (Console.ReadKey(true).KeyChar != 'n');
         }
     }
 }
