@@ -22,13 +22,15 @@ namespace Szigetek
         static void Main(string[] args)
         {
             //változók
-            string data = "0011111010111101101110";//5db sziget, legelső a leghoszabb:5
-            bool szarazfold = (data[0].ToString() == "1") ? true : false;
+            string data = "101011111000110010101111111100001110011111100001";// 10db sziget, a leghoszabb:8
 
             //elsőnek 
-            int sziget = 0, //szigetek száma
-                szigetHossz = 0,
+            bool szarazfold = (data[0].ToString() == "1") ? true : false;
+
+            int sziget = (szarazfold) ? 1 : 0, //szigetek száma
+                szigetHossz = (szarazfold) ? 1 : 0,
                 szigetHosszMax = 0;
+
             for (int i = 1; i < data.Length; i++)
             {
                 //Ha új szigethez érünk
