@@ -18,7 +18,7 @@ namespace SzorzoTabla
             // Ciklus
             for (int i = alsoHatar; i <= felsoHatar; i++)
             {
-                Console.WriteLine($"{szam} * {i} = {szam * i}");
+                Console.WriteLine($"{szam} * {i, 2} = {szam * i, 2}");
             }
 
             Console.ReadKey();
