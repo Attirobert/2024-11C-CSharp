@@ -14,10 +14,10 @@ namespace RandPar
         static void Main(string[] args)
         {
             // Változók 
-            int szam = 0;
+            int szam = 0;   // Ebbe a változóba képezzük a véletlen számot
             Random rnd = new Random();  // A Random osztály példányosítása
 
-            szam = rnd.Next(100, 1000);
+            szam = rnd.Next(100, 1000); // A véletlenszám >= 0 és < 1000
             if (szam % 2 == 0) Console.WriteLine($"A {szam} páros");
             else Console.WriteLine($"A {szam} páratlan");
 
