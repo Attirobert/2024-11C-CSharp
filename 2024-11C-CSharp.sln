@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hanyados", "Hanyados\Hanyad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaromszogVizsgalat", "HaromszogVizsgalat\HaromszogVizsgalat.csproj", "{0300C885-5C19-4DBB-B3F4-8CA1ACF11168}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2025.01.15", "2025.01.15", "{22AB83BC-CABA-473B-875F-87B57B1F45FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eletkor", "Eletkor\Eletkor.csproj", "{FA6F97CB-1E51-4365-BA93-520F8ABEFE0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +121,10 @@ Global
 		{0300C885-5C19-4DBB-B3F4-8CA1ACF11168}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0300C885-5C19-4DBB-B3F4-8CA1ACF11168}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0300C885-5C19-4DBB-B3F4-8CA1ACF11168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA6F97CB-1E51-4365-BA93-520F8ABEFE0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6F97CB-1E51-4365-BA93-520F8ABEFE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6F97CB-1E51-4365-BA93-520F8ABEFE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6F97CB-1E51-4365-BA93-520F8ABEFE0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,6 +143,7 @@ Global
 		{B8C35294-D838-4AF0-BF3C-CBEC05331E87} = {8CE88E0D-728D-48B6-A529-930B3C4A06D5}
 		{C05C6936-739D-4182-80BD-102BD9A7C8E2} = {8CE88E0D-728D-48B6-A529-930B3C4A06D5}
 		{0300C885-5C19-4DBB-B3F4-8CA1ACF11168} = {8CE88E0D-728D-48B6-A529-930B3C4A06D5}
+		{FA6F97CB-1E51-4365-BA93-520F8ABEFE0D} = {22AB83BC-CABA-473B-875F-87B57B1F45FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7B6BC67-986C-4A2E-99D4-2EEFBDC838A3}
