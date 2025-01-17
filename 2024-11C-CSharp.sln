@@ -87,6 +87,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vektor", "Vektor\Vektor.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixBill", "MatrixBill\MatrixBill.csproj", "{B13B26A2-4EB8-4DEB-8554-67A64831596E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csillag", "Csillag\Csillag.csproj", "{39CBF5AA-E2ED-4F0E-B80C-E1E865766268}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +227,10 @@ Global
 		{B13B26A2-4EB8-4DEB-8554-67A64831596E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B13B26A2-4EB8-4DEB-8554-67A64831596E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B13B26A2-4EB8-4DEB-8554-67A64831596E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39CBF5AA-E2ED-4F0E-B80C-E1E865766268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39CBF5AA-E2ED-4F0E-B80C-E1E865766268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39CBF5AA-E2ED-4F0E-B80C-E1E865766268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39CBF5AA-E2ED-4F0E-B80C-E1E865766268}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -263,6 +269,7 @@ Global
 		{99F2F714-5B29-4D46-9C7A-6DC998A4B13E} = {5DD88E5D-1698-4D09-AB47-E8F6C0F114EE}
 		{742E982C-9E69-4662-AAB9-4F905A8FFDFB} = {592ACB27-4F8B-4410-92DF-C220F5A0A8C5}
 		{B13B26A2-4EB8-4DEB-8554-67A64831596E} = {592ACB27-4F8B-4410-92DF-C220F5A0A8C5}
+		{39CBF5AA-E2ED-4F0E-B80C-E1E865766268} = {592ACB27-4F8B-4410-92DF-C220F5A0A8C5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7B6BC67-986C-4A2E-99D4-2EEFBDC838A3}
