@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Eletkor")]
+[assembly: AssemblyTitle("MatrixBill")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Eletkor")]
+[assembly: AssemblyProduct("MatrixBill")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("62749460-c307-45fd-a5d2-2870cfedcc27")]
+[assembly: Guid("b13b26a2-4eb8-4deb-8554-67a64831596e")]
 
 // Version information for an assembly consists of the following four values:
 //
