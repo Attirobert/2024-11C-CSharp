@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 /*
  * Adott két tömb, amelyeknek a méretét a felhasználótól kérjük be.
  * A két tömböt feltöltjük véletlen egész számokkal a [-100,+100] tartományból.
- * Ezután a két tömb tartalmát szétválogatjuk két másik tömbbe, úgy, hogy az egyik tömbbe a negatív, a másikba a pozitív számok kerülnek.
+ * Ezután a két tömb tartalmát szétválogatjuk két másik tömbbe, úgy, hogy az iegyik tömbbe a negatív, a másikba a pozitív számok kerülnek.
  * Végül kiíratjuk mind a négy tömböt.
  */
 namespace Tombs
@@ -16,108 +16,120 @@ namespace Tombs
         static void Main(string[] args)
         {
             //Valtozok mert kell
-            int tomb1, //Az 1-es tömbnek a mérete
-                tomb2,
+            int inpTomb1, //Az 1-es tömbnek a mérete
+                inpTomb2,   // A 2-es tömb mérete
                 j,
                 k;
-            int[] vsz,
-                vsz1,
-                vsz2,
-                vsz3;
-            Random rnd = new Random();
+            int[] vszTomb1,
+                vszTomb2,
+                pozTomb,
+                negTomb;
 
             //Olvassuk be a tömbök méretét mert kell:)
 
-            Console.WriteLine("Add meg az első tömb méretét");
-            tomb1= Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Add meg a második tömb méretét");
-            tomb2 = Convert.ToInt32(Console.ReadLine());
+            inpTomb1 = szamBeolvasas("Add meg az első tömb méretét");
+            inpTomb2 = szamBeolvasas("Add meg a második tömb méretét");
 
             //Tömbök létrehozása mert kell :(
-
-            vsz = new int[tomb1];
-            vsz1 = new int[tomb2];
-            vsz2 = new int[tomb1+tomb2];    // Pozitív tömb
-            vsz3 = new int[tomb1 + tomb2];  // Negatív tömb
+            vszTomb1 = new int[inpTomb1];
+            vszTomb2 = new int[inpTomb2];
+            pozTomb = new int[inpTomb1+inpTomb2];    // Pozitív tömb
+            negTomb = new int[inpTomb1 + inpTomb2];  // Negatív tömb
 
             //feltoltjuk az elso tombot mert megjott az osztondij :D
-            for (int x = 0; x < vsz.Length; x++)
+            for (int x = 0; x < vszTomb1.Length; x++)
             {
-                vsz[x] = rnd.Next(-100, 101);
+                vszTomb1[x] = rnd.Next(-100, 101);
             }
 
             //feltoltjuk a második tombot
-            for (int x = 0; x < vsz1.Length; x++)
+            for (int x = 0; x < vszTomb2.Length; x++)
             {
-                vsz1[x] = rnd.Next(-100, 101);
+                vszTomb2[x] = rnd.Next(-100, 101);
             }
 
             // Szétválogatjuk a számokat
-            // A vsz tömböt válogatjuk
-            j = 0;  // vsz2 indexe
-            k = 0;  // vsz3 indexe
-            for (int i = 0; i < vsz.Length; i++)
+            // A vszTomb1 tömböt válogatjuk
+            j = 0;  // pozTomb indexe
+            k = 0;  // negTomb indexe
+            for (int i = 0; i < vszTomb1.Length; i++)
             {
                 // Megnézzük, hogy a milyen elem van ebben 
-                if (vsz[i] > 0)
+                if (vszTomb1[i] > 0)
                 {
-                    vsz2[j] = vsz[i];
+                    pozTomb[j] = vszTomb1[i];
                     j++;    // A j indexet növeljük, mert a "j" indexű elemet feltöltöttük
                 }
                 else
                 {
-                    vsz3[k] = vsz[i];
+                    negTomb[k] = vszTomb1[i];
                     k++;
                 }
             }
 
-            // A vsz1 tömböt válogatjuk
-            j = 0;  // vsz2 indexe
-            k = 0;  // vsz3 indexe
-            for (int i = 0; i < vsz1.Length; i++)
+            // A vszTomb2 tömböt válogatjuk
+            j = 0;  // pozTomb indexe
+            k = 0;  // negTomb indexe
+            for (int i = 0; i < vszTomb2.Length; i++)
             {
                 // Megnézzük, hogy a milyen elem van ebben 
-                if (vsz1[i] > 0)
+                if (vszTomb2[i] > 0)
                 {
-                    vsz2[j] = vsz1[i];
+                    pozTomb[j] = vszTomb2[i];
                     j++;    // A j indexet növeljük, mert a "j" indexű elemet feltöltöttük
                 }
                 else
                 {
-                    vsz3[k] = vsz1[i];
+                    negTomb[k] = vszTomb2[i];
                     k++;
                 }
             }
 
-            // Kiíratjuk a vsz tömböt
+            // Kiíratjuk a vszTomb1 tömböt
             Console.WriteLine("A vsz tömb:");
-            for (int i = 0; i < vsz.Length; i++)
+            for (int i = 0; i < vszTomb1.Length; i++)
             {
-                Console.Write($"{vsz[i]}, ");
+                Console.Write($"{vszTomb1[i]}, ");
             }
 
-            // Kiíratjuk a vsz1 tömböt
+            // Kiíratjuk a vszTomb2 tömböt
             Console.WriteLine("\nA vsz1 tömb:");
-            for (int i = 0; i < vsz1.Length; i++)
+            for (int i = 0; i < vszTomb2.Length; i++)
             {
-                Console.Write($"{vsz1[i]}, ");
+                Console.Write($"{vszTomb2[i]}, ");
             }
 
-            // Kiíratjuk a vsz2 tömböt
+            // Kiíratjuk a pozTomb tömböt
             Console.WriteLine("\nA vsz tömb:");
-            for (int i = 0; i < vsz2.Length; i++)
+            for (int i = 0; i < pozTomb.Length; i++)
             {
-                Console.Write($"{vsz2[i]}, ");
+                Console.Write($"{pozTomb[i]}, ");
             }
 
-            // Kiíratjuk a vsz3 tömböt
+            // Kiíratjuk a negTomb tömböt
             Console.WriteLine("\nA vsz tömb:");
-            for (int i = 0; i < vsz3.Length; i++)
+            for (int i = 0; i < negTomb.Length; i++)
             {
-                Console.Write($"{vsz3[i]}, ");
+                Console.Write($"{negTomb[i]}, ");
             }
 
             Console.ReadKey();
+        }
+
+        static int szamBeolvasas(string s)
+        {
+            Console.WriteLine(s);
+            return Convert.ToInt32(Console.ReadLine());
+        }
+
+        static void tombFeltoltes(int[] t)
+        {
+            Random rnd = new Random();
+
+            for (int x = 0; x < t.Length; x++)
+            {
+                t[x] = rnd.Next(-100, 101);
+            }
         }
     }
 }
