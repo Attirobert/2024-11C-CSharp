@@ -15,105 +15,50 @@ namespace Tombs
     {
         static void Main(string[] args)
         {
-            //Valtozok mert kell
+            //Valtozok
             int inpTomb1, //Az 1-es tömbnek a mérete
                 inpTomb2,   // A 2-es tömb mérete
                 j,
                 k;
             int[] vszTomb1,
                 vszTomb2,
-                pozTomb,
-                negTomb;
+                pozTomb,    // Pozitív számok tömbje
+                negTomb;    // Negatív számok tömbje
 
             //Olvassuk be a tömbök méretét mert kell:)
-
             inpTomb1 = szamBeolvasas("Add meg az első tömb méretét");
             inpTomb2 = szamBeolvasas("Add meg a második tömb méretét");
 
             //Tömbök létrehozása mert kell :(
             vszTomb1 = new int[inpTomb1];
             vszTomb2 = new int[inpTomb2];
-            pozTomb = new int[inpTomb1+inpTomb2];    // Pozitív tömb
-            negTomb = new int[inpTomb1 + inpTomb2];  // Negatív tömb
+            pozTomb = new int[inpTomb1+inpTomb2];
+            negTomb = new int[inpTomb1 + inpTomb2]; 
 
-            //feltoltjuk az elso tombot mert megjott az osztondij :D
-            for (int x = 0; x < vszTomb1.Length; x++)
-            {
-                vszTomb1[x] = rnd.Next(-100, 101);
-            }
+            //Feltöltjuk a tömböket
+            tombFeltoltes(vszTomb1);    // 1. tömb
+            tombFeltoltes(vszTomb2);    // 2. tömb
 
-            //feltoltjuk a második tombot
-            for (int x = 0; x < vszTomb2.Length; x++)
-            {
-                vszTomb2[x] = rnd.Next(-100, 101);
-            }
+            // Szétválogatjuk a tömböket
+            szetValogatas(vszTomb1, pozTomb, negTomb);
+            szetValogatas(vszTomb2, pozTomb, negTomb);
 
-            // Szétválogatjuk a számokat
-            // A vszTomb1 tömböt válogatjuk
-            j = 0;  // pozTomb indexe
-            k = 0;  // negTomb indexe
-            for (int i = 0; i < vszTomb1.Length; i++)
-            {
-                // Megnézzük, hogy a milyen elem van ebben 
-                if (vszTomb1[i] > 0)
-                {
-                    pozTomb[j] = vszTomb1[i];
-                    j++;    // A j indexet növeljük, mert a "j" indexű elemet feltöltöttük
-                }
-                else
-                {
-                    negTomb[k] = vszTomb1[i];
-                    k++;
-                }
-            }
-
-            // A vszTomb2 tömböt válogatjuk
-            j = 0;  // pozTomb indexe
-            k = 0;  // negTomb indexe
-            for (int i = 0; i < vszTomb2.Length; i++)
-            {
-                // Megnézzük, hogy a milyen elem van ebben 
-                if (vszTomb2[i] > 0)
-                {
-                    pozTomb[j] = vszTomb2[i];
-                    j++;    // A j indexet növeljük, mert a "j" indexű elemet feltöltöttük
-                }
-                else
-                {
-                    negTomb[k] = vszTomb2[i];
-                    k++;
-                }
-            }
-
-            // Kiíratjuk a vszTomb1 tömböt
-            Console.WriteLine("A vsz tömb:");
-            for (int i = 0; i < vszTomb1.Length; i++)
-            {
-                Console.Write($"{vszTomb1[i]}, ");
-            }
-
-            // Kiíratjuk a vszTomb2 tömböt
-            Console.WriteLine("\nA vsz1 tömb:");
-            for (int i = 0; i < vszTomb2.Length; i++)
-            {
-                Console.Write($"{vszTomb2[i]}, ");
-            }
-
-            // Kiíratjuk a pozTomb tömböt
-            Console.WriteLine("\nA vsz tömb:");
-            for (int i = 0; i < pozTomb.Length; i++)
-            {
-                Console.Write($"{pozTomb[i]}, ");
-            }
-
-            // Kiíratjuk a negTomb tömböt
-            Console.WriteLine("\nA vsz tömb:");
-            for (int i = 0; i < negTomb.Length; i++)
-            {
-                Console.Write($"{negTomb[i]}, ");
-            }
+            // Kiíratjuk a tömböket
+            kiir("A vsz1 tömb:", vszTomb1);
+            kiir("\nA vsz2 tömb:", vszTomb2);
+            kiir("\nA pozitív tömb:", pozTomb);
+            kiir("\nA negatív tömb:", negTomb);
 
             Console.ReadKey();
+        }
+
+        static void kiir(string v, int[] t)
+        {
+            Console.WriteLine(v);
+            for (int i = 0; i < t.Length; i++)
+            {
+                Console.Write($"{t[i]}, ");
+            }
         }
 
         static int szamBeolvasas(string s)
@@ -129,6 +74,26 @@ namespace Tombs
             for (int x = 0; x < t.Length; x++)
             {
                 t[x] = rnd.Next(-100, 101);
+            }
+        }
+
+        static void szetValogatas(int[] t, int[] pozTomb, int[] negTomb)
+        {
+            int j = 0;  // pozTomb indexe
+            int k = 0;  // negTomb indexe
+            for (int i = 0; i < t.Length; i++)
+            {
+                // Megnézzük, hogy a milyen elem van ebben 
+                if (t[i] > 0)
+                {
+                    pozTomb[j] = t[i];
+                    j++;    // A j indexet növeljük, mert a "j" indexű elemet feltöltöttük
+                }
+                else
+                {
+                    negTomb[k] = t[i];
+                    k++;
+                }
             }
         }
     }
