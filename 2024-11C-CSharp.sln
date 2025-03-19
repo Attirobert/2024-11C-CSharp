@@ -111,6 +111,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paros", "Paros\Paros.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZartSzelveny", "ZartSzelveny\ZartSzelveny.csproj", "{EFB55CF1-5516-4E79-8F69-E4B936A6EB22}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2025-03-19", "2025-03-19", "{FE320E2F-95DA-4D1F-8E95-1B08A6795626}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
