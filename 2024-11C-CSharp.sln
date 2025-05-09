@@ -125,6 +125,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osztas", "Osztas\Osztas.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2025-04-02", "2025-04-02", "{E680CD1C-0BDD-44F9-B06D-394C20C9F5C6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2025-04-16", "2025-04-16", "{5633766B-9643-4BC3-9B04-8EE151E02D39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
