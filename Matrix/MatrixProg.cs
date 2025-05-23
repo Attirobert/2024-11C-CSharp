@@ -30,7 +30,7 @@ namespace Matrix
             sor = Beolvas("Adja meg a sorok számát!");
             oszlop = Beolvas("Adja meg az oszlopok számát!");
 
-            // Létre hozom a tömböket
+            // Létre hozom a tömböt
             tomb = new int[sor, oszlop];
 
             // A tömb feltöltése
